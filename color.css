@@ -1,0 +1,389 @@
+
+body{
+    background:#0c0608;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#cursorGlow{
+
+    width:300px;
+    height:300px;
+
+    background:#2563EB;
+
+    border-radius:50%;
+
+    position:fixed;
+
+    left:0;
+    top:0;
+
+    filter:blur(120px);
+
+    opacity:0.25;
+
+    pointer-events:none;
+
+    transform:translate(-50%,-50%);
+
+    transition:transform 0.08s linear;
+
+    z-index:-1;
+
+}
+#containerdiv{
+    width: 700px;
+    margin: 50px auto;
+    padding: 30px;
+
+    background-color: #1E293B;
+
+    border-radius: 20px;
+    animation: cardEntrance 0.8s ease-out;
+
+    box-shadow: 0px 0px 20px rgba(0,0,0,0.4);
+
+    text-align: center;
+}
+
+#dashboard{
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:25px;
+
+    margin-top:30px;
+
+    margin-bottom:30px;
+
+}
+#records{
+    display: none;
+}
+#recordPage{
+    display: none;
+}
+#title{
+    color: white;
+    display: flex;
+    align-items: center;
+justify-content: center;
+margin-top: 150px;
+}
+
+
+footer{
+
+    color:#eceef0;
+
+    margin-top:40px;
+
+    text-align:center;
+
+}
+
+
+
+#attend,
+#cgpa,
+#assign{
+    width: 220px;
+    height: 60px;
+
+    background:#0f874d;
+
+    color:white;
+
+    border:none;
+
+    border-radius:15px;
+
+    font-size:18px;
+
+    font-weight:bold;
+
+    margin:15px;
+
+    cursor:pointer;
+
+    transition:0.3s;
+}
+#attend:hover,
+#cgpa:hover,
+#assign:hover{
+
+    background:#1D4ED8;
+
+    transform:translateY(-5px);
+
+    box-shadow:0px 10px 20px rgba(59,130,246,0.4);
+
+}
+#logindiv{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#detaildiv{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+#optiondiv{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+#cgpadiv{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#assdiv{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#btn{
+     background-color: #0e582f;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 10px 20px;
+    margin: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+input{
+    width: 250px;
+    padding: 10px;
+    margin: 8px;
+    border: 2px solid #334155;
+    border-radius: 10px;
+    background-color: #1E293B;
+    color: white;
+    font-size: 16px;
+    outline: none;
+    transition: 0.3s;
+}
+input:focus{
+    border-color: #3B82F6;
+    box-shadow: 0 0 10px rgba(59,130,246,0.5);
+}
+input::placeholder{
+    color: #94A3B8;
+}
+#btn:hover{
+    background-color: #2563EB;
+    transform: scale(1.05);
+}
+#save{
+    background-color: #3B82F6;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 10px 20px;
+    margin: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+    display: none;
+}
+#save:hover{ background-color: #2563EB;
+    transform: scale(1.05);}
+    #save:active{
+        transform: scale(0.98);
+
+    }
+    button{
+    background-color: #1d7e10;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 10px 20px;
+    margin: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+#txt{
+    display: none;
+}
+button:hover{
+    background-color: #2563EB;
+    transform: scale(1.05);
+}
+button:active{
+    transform: scale(0.98);
+}
+#lool{
+    display:none;
+}
+#attend{
+    display:none;
+}
+
+#cgpa{
+    display:none;
+}
+
+
+
+table{
+
+    width:90%;
+
+    margin:auto;
+
+    border-collapse:collapse;
+
+    margin-top:20px;
+
+}
+th{
+
+    background:#2563EB;
+
+    color:white;
+
+    padding:12px;
+
+}
+td{
+
+    background:#1E293B;
+
+    color:white;
+
+    padding:10px;
+
+    text-align:center;
+
+}
+table,th,td{
+
+    border:1px solid #334155;
+
+}
+#bum{
+
+    color:#22C55E;
+
+    font-weight:bold;
+
+}
+#assign{
+    display:none;
+}
+#tool{
+    display: none;
+}
+#sub{
+    display: none;
+}
+#num{
+    display: none;
+}
+#bum{
+    display: none;
+}
+#next{
+    display: none;
+}
+#keep{
+    display: none;
+}
+#poop{
+    display: none;
+}
+#subjectcount{
+    display: none;
+}
+#start{
+    display: none;
+}
+#currentsubject{
+    display: none;
+}
+#subjectname{
+    display: none;
+}
+#mte{
+    display: none;
+}
+#cws{
+    display: none;
+}
+#ete{
+    display: none;
+}
+#noob{
+    display: none;
+}
+#resultTable{
+    display: none;
+}
+#cgpatitle{
+    display: none;
+}
+#label{
+    display: none;
+}
+#tree{
+    display: none;
+}
+#tracker{
+    display: none;
+}
+#lund{
+    display: none;
+}
+#agon{
+    display: none;
+}
+#letgo{
+    display: none;
+}
+#sour{
+    display: none;
+}
+#umami{
+    display: none;
+}
+.magnetic{
+    transition: transform 0.2s ease;
+}
+#due{
+    display: none;
+}
+#showmy{
+    display: none;
+}
+#assresult{
+    display: none;
+}
+#hope{
+    display: none;
+}
+@keyframes cardEntrance{
+
+    from{
+        opacity:0;
+        transform:translateY(30px);
+    }
+
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+
+}
